@@ -1,0 +1,59 @@
+.album {
+  margin-top: 30px;
+  flex: 1;
+  overflow-y: auto;
+  transition: all 0.2s ease;
+  z-index: 10;
+}
+
+.album-list {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+}
+
+.album-item {
+  margin: 10px 0;
+  width: 550px;
+  height: 60px;
+  background-color: var(--home-color);
+  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.5));
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  // margin: 0 10px;
+  cursor: pointer;
+  padding: 10px 0;
+}
+
+.album-item:hover {
+  background-color: var(--body-color);
+}
+
+.album-img {
+  width: 40px;
+  margin-left: 11px;
+  height: 40px;
+}
+
+.album-img img {
+  border-radius: 5px;
+  object-fit: cover;
+  width: 100%;
+}
+
+.album-name {
+  color: var(--white);
+  text-align: center;
+}
+.album-name p {
+  font-size: 13px;
+  opacity: 0.5;
+}
+
+.album-timer {
+  margin-right: 11px;
+  color: var(--white);
+}

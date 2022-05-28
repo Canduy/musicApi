@@ -1,0 +1,60 @@
+.controls {
+  padding-top: 20px;
+}
+.info-song {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.img-thum img {
+  border-radius: 50%;
+  object-fit: cover;
+}
+.img-thum img.active {
+  animation: spinner 10s linear infinite;
+}
+.song-name {
+  margin-top: 10px;
+}
+
+.song-name span,
+.song-name p {
+  display: block;
+  text-align: center;
+  color: var(--white);
+  font-size: 2rem;
+  padding-bottom: 5px;
+}
+
+.song-name p {
+  font-size: 1.5rem;
+  opacity: 0.5;
+}
+
+.controls-btn {
+  margin-top: 40px;
+}
+.rhap_container {
+  background-color: transparent;
+  box-shadow: none;
+}
+.rhap_progress-filled,
+.rhap_progress-indicator {
+  background-color: var(--primary-color);
+}
+
+.rhap_button-clear,
+.rhap_time {
+  color: var(--white);
+}
+
+@keyframes spinner {
+  from {
+    transform: rotate(0);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}

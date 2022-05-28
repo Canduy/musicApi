@@ -1,0 +1,53 @@
+.song {
+  margin-top: 30px;
+  flex: 1;
+  overflow-y: auto;
+  transition: all 0.2s ease;
+}
+
+.song-list {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+}
+
+.song-item {
+  margin: 10px 0;
+  width: 550px;
+  height: 60px;
+  background-color: var(--home-color);
+  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.5));
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  // margin: 0 10px;
+  cursor: pointer;
+  padding: 10px 0;
+}
+
+.song-item:hover {
+  background-color: var(--body-color);
+}
+
+.btn.btn-song,
+.title {
+  margin: 0 11px;
+}
+
+.title {
+  color: var(--white);
+}
+
+.song-item div {
+  display: flex;
+  align-items: center;
+}
+
+.song-item div img {
+  width: 40px;
+  height: 40px;
+  border-radius: 10px;
+  margin-left: 11px;
+}
